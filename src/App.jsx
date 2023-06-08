@@ -4,13 +4,21 @@ import Hero from './Components/Hero'
 import Card from './Components/card'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
       <Navbar />
       <Hero />
-      <Card />
+      <Card 
+        img="cardImg.svg"
+        rating = "5.0"
+        reviewCount = {6}
+        country = "USA"
+        title= "Life lessons with Katie Zaferes"
+        price={136}
+      
+      />
     </>
   )
 }
