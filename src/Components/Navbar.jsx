@@ -1,5 +1,5 @@
 
-import logo from "../Images/airbnb.svg"
+import logo from '../airbnb.svg'
 
 
 

@@ -1,4 +1,4 @@
-import heroImg from "../Images/grid.svg"
+import heroImg from '../grid.svg'
 
 
 const Hero = () => {

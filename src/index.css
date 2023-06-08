@@ -1,69 +1,88 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
-  font-family: 'Poppins',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+  font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
 }
-*{
+
+* {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+
   max-width: 550px;
-  margin: 0 auto;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  border: 14px solid #e4e4e2;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px, inset rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, inset rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
 }
 
-nav{
+nav {
   padding: 23px 30px;
-  box-shadow :0 2.98px 7.46px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2.98px 7.46px rgba(0, 0, 0, 0.1);
 }
-.gray{
-  color:#918E9B;;
+
+.gray {
+  color: #918E9B;
+  ;
 }
-section{
+
+section {
   padding-block: 26px;
 }
 
-.section--img{
+.section--img {
   display: block;
   margin: 0 auto;
-  
+
 }
 
-.hero-content{
+.hero-content {
   margin-top: 32px;
   margin-left: 36px;
   max-width: 349px;
 }
-.hero-content--title{
+
+.hero-content--title {
   margin: 0;
   font-size: 36px;
   font-style: semi-bold;
   line-height: 40px;
-  
+
 }
-.hero-content--desc{
-  margin:0;
+
+.hero-content--desc {
+  margin: 0;
   margin-top: 13px;
   font-style: light;
   font-size: 16px;
   line-height: 18px;
-  /* border: 1px solid red; */
 }
 
 
-.cardContainer{
-  margin-left: 36px;
+
+.cardContainer {
   width: 175px;
 
 }
-.imgContainer{
+
+.cardContainer:first-child {
+  margin-left: 37px;
+
+}
+
+.cardContainer:not(:first-child) {
+  margin-left: 19px;
+}
+
+
+.cardContainer .imgContainer {
   position: relative;
 }
-.tag{
+
+.tag {
   position: absolute;
   background-color: #fff;
   left: 6px;
@@ -73,14 +92,23 @@ section{
   padding: 4px 6px;
   border-radius: 2px;
 }
-.card--stats{
+
+.card--stats {
   display: flex;
   align-items: baseline;
   gap: 2px;
-  
+
 }
-.card-desc p{
-  font-size: 12px;
+
+.card-desc p {
+  font-size: 11px;
   margin: 0;
   color: #222;
+}
+
+.card-list-container {
+  display: flex;
+  /* justify-content: flex-end; */
+  width: 100%;
+  overflow-x: auto;
 }
